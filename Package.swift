@@ -12,7 +12,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "AliPlayerSDK",
-            targets: ["AliyunPlayer"]),
+            targets: ["AliyunPlayer", "AliyunMediaDownloader"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -24,6 +24,10 @@ let package = Package(
         .binaryTarget(
             name: "AliyunPlayer",
             path: "AliyunPlayer.xcframework"
+        ),
+        .binaryTarget(
+            name: "AliyunMediaDownloader",
+            path: "AliyunMediaDownloader.xcframework"
         ),
     ]
 )
