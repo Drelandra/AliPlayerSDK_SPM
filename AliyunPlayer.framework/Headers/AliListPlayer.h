@@ -29,9 +29,6 @@ OBJC_EXPORT
  */
 - (instancetype)init:(NSString*)traceID;
 
-- (void)stop;
-
-- (void)destroy;
 /**
  @brief 添加资源到播放列表中
  @param vid vid的播放方式
